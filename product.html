@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHANTOM HOODIE | ARCANE</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Site Config & Styles -->
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="antialiased selection:bg-arcane-accent selection:text-white bg-arcane-black text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html"
+                    class="font-display font-bold text-2xl tracking-widest hover:text-arcane-accent transition-colors">ARCANE</a>
+                <div class="hidden md:flex items-center space-x-12">
+                    <a href="index.html"
+                        class="text-sm font-medium tracking-wide hover:text-arcane-accent transition-colors">HOME</a>
+                    <a href="shop.html"
+                        class="text-sm font-medium tracking-wide hover:text-arcane-accent transition-colors">SHOP</a>
+                    <a href="about.html"
+                        class="text-sm font-medium tracking-wide hover:text-arcane-accent transition-colors">ABOUT</a>
+                    <a href="contact.html"
+                        class="text-sm font-medium tracking-wide hover:text-arcane-accent transition-colors">CONTACT</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="cart.html" class="relative group hover:text-arcane-accent"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg><span
+                            class="absolute -top-2 -right-2 bg-arcane-accent text-white text-[10px] font-bold h-4 w-4 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity">0</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <section class="pt-32 pb-24 min-h-screen">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+                <!-- Gallery -->
+                <div class="space-y-4">
+                    <div class="aspect-[4/5] bg-arcane-gray overflow-hidden">
+                        <img src="https://placehold.co/800x1000/101010/555555?text=PHANTOM+HOODIE+FRONT"
+                            alt="Phantom Hoodie Front" class="w-full h-full object-cover">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="aspect-square bg-arcane-gray overflow-hidden">
+                            <img src="https://placehold.co/400x400/101010/555555?text=DETAIL+1" alt="Detail"
+                                class="w-full h-full object-cover hover:scale-110 transition-transform cursor-pointer">
+                        </div>
+                        <div class="aspect-square bg-arcane-gray overflow-hidden">
+                            <img src="https://placehold.co/400x400/101010/555555?text=DETAIL+2" alt="Detail"
+                                class="w-full h-full object-cover hover:scale-110 transition-transform cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="lg:sticky lg:top-32 h-fit">
+                    <div class="mb-8 border-b border-white/10 pb-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h1 class="font-display text-4xl font-bold tracking-wider">PHANTOM HOODIE</h1>
+                            <span class="font-bold text-2xl">$89.00</span>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Engineered for shadows. The Phantom Hoodie features a heavyweight organic cotton blend,
+                            dropped shoulders, and a structured hood. Finished with subtle tonal branding and distressed
+                            hem details.
+                        </p>
+
+                        <div class="flex items-center space-x-2 mb-6">
+                            <div class="flex text-arcane-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-gray-500">(24 Reviews)</span>
+                        </div>
+                    </div>
+
+                    <!-- Options -->
+                    <div class="mb-8">
+                        <div class="mb-6">
+                            <span class="block text-sm font-bold tracking-widest mb-3">SIZE</span>
+                            <div class="flex gap-3">
+                                <button
+                                    class="w-12 h-12 border border-white/20 flex items-center justify-center hover:border-arcane-accent hover:text-arcane-accent transition-colors">S</button>
+                                <button
+                                    class="w-12 h-12 border border-arcane-accent text-arcane-accent flex items-center justify-center">M</button>
+                                <button
+                                    class="w-12 h-12 border border-white/20 flex items-center justify-center hover:border-arcane-accent hover:text-arcane-accent transition-colors">L</button>
+                                <button
+                                    class="w-12 h-12 border border-white/20 flex items-center justify-center hover:border-arcane-accent hover:text-arcane-accent transition-colors">XL</button>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <span class="block text-sm font-bold tracking-widest mb-3">COLOR</span>
+                            <div class="flex gap-3">
+                                <button class="w-8 h-8 rounded-full bg-black border-2 border-arcane-accent"></button>
+                                <button
+                                    class="w-8 h-8 rounded-full bg-gray-800 border-2 border-transparent hover:border-white transition-colors"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="flex flex-col gap-4">
+                        <button
+                            class="w-full bg-white text-black py-4 font-bold tracking-widest hover:bg-arcane-accent hover:text-white transition-all duration-300">ADD
+                            TO CART</button>
+                        <button
+                            class="w-full border border-white/20 text-white py-4 font-bold tracking-widest hover:bg-white hover:text-black transition-all duration-300">WISHLIST</button>
+                    </div>
+
+                    <!-- Info Lists -->
+                    <div class="mt-12 space-y-4">
+                        <details class="group border-b border-white/10 pb-4 cursor-pointer">
+                            <summary
+                                class="font-bold flex justify-between items-center list-none text-sm tracking-widest">
+                                MATERIALS & CARE
+                                <span class="group-open:rotate-45 transition-transform">+</span>
+                            </summary>
+                            <p class="mt-4 text-gray-400 text-sm">100% Organic Cotton. 450 GSM French Terry. Machine
+                                wash cold.</p>
+                        </details>
+                        <details class="group border-b border-white/10 pb-4 cursor-pointer">
+                            <summary
+                                class="font-bold flex justify-between items-center list-none text-sm tracking-widest">
+                                SHIPPING
+                                <span class="group-open:rotate-45 transition-transform">+</span>
+                            </summary>
+                            <p class="mt-4 text-gray-400 text-sm">Free worldwide shipping on orders over $200. Standard
+                                delivery 5-7 business days.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-16 bg-arcane-dark border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="font-display text-2xl font-bold mb-8">COMPLETE THE LOOK</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Related 1 -->
+                <div class="group relative cursor-pointer">
+                    <div class="aspect-[3/4] bg-arcane-gray mb-2 overflow-hidden">
+                        <img src="https://placehold.co/600x800/101010/555555?text=VOID+CARGO" alt="Void Cargo"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="font-bold text-sm">VOID CARGO</h4>
+                        <span class="text-xs text-gray-500">$120.00</span>
+                    </div>
+                </div>
+                <!-- Related 2 -->
+                <div class="group relative cursor-pointer">
+                    <div class="aspect-[3/4] bg-arcane-gray mb-2 overflow-hidden">
+                        <img src="https://placehold.co/600x800/101010/555555?text=ECLIPSE+TEE" alt="Eclipse Tee"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="font-bold text-sm">ECLIPSE TEE</h4>
+                        <span class="text-xs text-gray-500">$45.00</span>
+                    </div>
+                </div>
+                <!-- Related 3 -->
+                <div class="group relative cursor-pointer">
+                    <div class="aspect-[3/4] bg-arcane-gray mb-2 overflow-hidden">
+                        <img src="https://placehold.co/600x800/101010/555555?text=NEON+BEANIE" alt="Beanie"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="font-bold text-sm">NEON BEANIE</h4>
+                        <span class="text-xs text-gray-500">$25.00</span>
+                    </div>
+                </div>
+                <!-- Related 4 -->
+                <div class="group relative cursor-pointer">
+                    <div class="aspect-[3/4] bg-arcane-gray mb-2 overflow-hidden">
+                        <img src="https://placehold.co/600x800/101010/555555?text=CYBER+MASK" alt="Mask"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="text-center">
+                        <h4 class="font-bold text-sm">CYBER MASK</h4>
+                        <span class="text-xs text-gray-500">$35.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-white/5 text-center text-gray-600 text-sm">
+        <p>&copy; 2026 ARCANE. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

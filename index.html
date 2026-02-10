@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCANE | Redefine Reality</title>
+    <meta name="description" content="Premium streetwear for the modern mystic. Explore the Arcane collection.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Site Config & Styles -->
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="antialiased selection:bg-arcane-accent selection:text-white bg-arcane-black text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html"
+                    class="font-display font-bold text-2xl tracking-widest text-white hover:text-arcane-accent transition-colors">
+                    ARCANE
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-12">
+                    <a href="index.html"
+                        class="text-sm font-medium tracking-wide text-arcane-accent transition-colors">HOME</a>
+                    <a href="shop.html"
+                        class="text-sm font-medium tracking-wide hover:text-arcane-accent transition-colors">SHOP</a>
+                    <a href="about.html"
+                        class="text-sm font-medium tracking-wide hover:text-arcane-accent transition-colors">ABOUT</a>
+                    <a href="contact.html"
+                        class="text-sm font-medium tracking-wide hover:text-arcane-accent transition-colors">CONTACT</a>
+                </div>
+
+                <!-- Icons -->
+                <div class="flex items-center space-x-6">
+                    <button class="text-white hover:text-arcane-accent transition-colors relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <a href="cart.html" class="text-white hover:text-arcane-accent transition-colors relative group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                        <span
+                            class="absolute -top-2 -right-2 bg-arcane-accent text-white text-[10px] font-bold h-4 w-4 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity">0</span>
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden text-white hover:text-arcane-accent transition-colors"
+                        id="mobile-menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden) -->
+        <div class="md:hidden absolute top-20 left-0 w-full bg-arcane-dark border-b border-white/5 transform -translate-y-[150%] transition-transform duration-300"
+            id="mobile-menu">
+            <div class="px-6 py-8 space-y-6 flex flex-col items-center">
+                <a href="index.html"
+                    class="text-lg font-medium tracking-wide hover:text-arcane-accent transition-colors">HOME</a>
+                <a href="shop.html"
+                    class="text-lg font-medium tracking-wide hover:text-arcane-accent transition-colors">SHOP</a>
+                <a href="about.html"
+                    class="text-lg font-medium tracking-wide hover:text-arcane-accent transition-colors">ABOUT</a>
+                <a href="contact.html"
+                    class="text-lg font-medium tracking-wide hover:text-arcane-accent transition-colors">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- Background Image/Gradient -->
+        <div class="absolute inset-0 z-0">
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-arcane-black/30 via-arcane-black/50 to-arcane-black z-10">
+            </div>
+            <!-- Placeholder for Hero Image -->
+            <img src="https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?q=80&w=2070&auto=format&fit=crop"
+                alt="Arcane Hero" class="w-full h-full object-cover opacity-60">
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+            <p
+                class="text-arcane-accent font-display tracking-[0.2em] text-sm md:text-base mb-4 animate-fade-in-up uppercase">
+                Est. 2026 // Future Wear</p>
+            <h1 class="font-display font-bold text-5xl md:text-8xl leading-tight mb-6 animate-fade-in-up"
+                style="animation-delay: 0.1s;">
+                WEAR THE <br /> <span class="text-outline">UNKNOWN</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light animate-fade-in-up"
+                style="animation-delay: 0.2s;">
+                Fashion for those who dare to step into the shadows. Premium streetwear crafted for the modern enigma.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 animate-fade-in-up"
+                style="animation-delay: 0.3s;">
+                <a href="shop.html"
+                    class="px-8 py-4 bg-white text-black font-bold tracking-wider hover:bg-arcane-accent hover:text-white transition-all duration-300 clip-path-slant min-w-[200px]">
+                    SHOP COLLECTION
+                </a>
+                <a href="#featured"
+                    class="px-8 py-4 border border-white/20 text-white font-bold tracking-wider hover:bg-white/5 transition-all duration-300 min-w-[200px]">
+                    EXPLORE
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Featured Collection -->
+    <section id="featured" class="py-24 bg-arcane-black relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-2">LATEST DROPS</h2>
+                    <div class="h-1 w-20 bg-arcane-accent"></div>
+                </div>
+                <a href="shop.html"
+                    class="hidden md:block text-sm tracking-widest hover:text-arcane-accent transition-colors pb-2 border-b border-transparent hover:border-arcane-accent">VIEW
+                    ALL</a>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="group relative cursor-pointer">
+                    <div class="relative overflow-hidden aspect-[3/4] bg-arcane-gray mb-4">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10">
+                        </div>
+                        <img src="https://placehold.co/600x800/101010/555555?text=PHANTOM+HOODIE" alt="Phantom Hoodie"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 z-20">
+                            <span
+                                class="bg-arcane-accent text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">New</span>
+                        </div>
+                        <!-- Quick Add -->
+                        <button
+                            class="absolute bottom-0 left-0 w-full bg-white text-black py-4 font-bold tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 hover:bg-arcane-accent hover:text-white">
+                            ADD TO CART
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="font-display font-medium text-lg mb-1 group-hover:text-arcane-accent transition-colors">
+                                PHANTOM OVERSIZED HOODIE</h3>
+                            <p class="text-gray-500 text-sm">Heavyweight Cotton</p>
+                        </div>
+                        <span class="font-bold text-lg">$89.00</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group relative cursor-pointer">
+                    <div class="relative overflow-hidden aspect-[3/4] bg-arcane-gray mb-4">
+                        <img src="https://placehold.co/600x800/101010/555555?text=VOID+CARGO" alt="Void Cargo Pants"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <!-- Quick Add -->
+                        <button
+                            class="absolute bottom-0 left-0 w-full bg-white text-black py-4 font-bold tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 hover:bg-arcane-accent hover:text-white">
+                            ADD TO CART
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="font-display font-medium text-lg mb-1 group-hover:text-arcane-accent transition-colors">
+                                VOID TECH CARGO</h3>
+                            <p class="text-gray-500 text-sm">Water Resistant</p>
+                        </div>
+                        <span class="font-bold text-lg">$120.00</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group relative cursor-pointer">
+                    <div class="relative overflow-hidden aspect-[3/4] bg-arcane-gray mb-4">
+                        <img src="https://placehold.co/600x800/101010/555555?text=ECLIPSE+TEE" alt="Eclipse Tee"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <!-- Quick Add -->
+                        <button
+                            class="absolute bottom-0 left-0 w-full bg-white text-black py-4 font-bold tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 hover:bg-arcane-accent hover:text-white">
+                            ADD TO CART
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="font-display font-medium text-lg mb-1 group-hover:text-arcane-accent transition-colors">
+                                ECLIPSE GRAPHIC TEE</h3>
+                            <p class="text-gray-500 text-sm">Organic Cotton</p>
+                        </div>
+                        <span class="font-bold text-lg">$45.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center md:hidden">
+                <a href="shop.html"
+                    class="inline-block px-8 py-3 border border-white/20 text-white text-sm tracking-widest hover:bg-white hover:text-black transition-colors">VIEW
+                    ALL PRODUCTS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <div class="py-12 bg-arcane-accent overflow-hidden">
+        <div class="animate-marquee flex items-center">
+            <span class="text-4xl md:text-6xl font-display font-bold text-black px-8">REDEFINE REALITY</span>
+            <span class="text-4xl md:text-6xl font-display font-bold text-black/30 px-8 text-outline-black">///</span>
+            <span class="text-4xl md:text-6xl font-display font-bold text-black px-8">EMBRACE THE UNKNOWN</span>
+            <span class="text-4xl md:text-6xl font-display font-bold text-black/30 px-8 text-outline-black">///</span>
+            <span class="text-4xl md:text-6xl font-display font-bold text-black px-8">ARCANE 2026</span>
+            <span class="text-4xl md:text-6xl font-display font-bold text-black/30 px-8 text-outline-black">///</span>
+            <span class="text-4xl md:text-6xl font-display font-bold text-black px-8">REDEFINE REALITY</span>
+            <span class="text-4xl md:text-6xl font-display font-bold text-black/30 px-8 text-outline-black">///</span>
+            <!-- Duplicate for smooth loop -->
+            <span class="text-4xl md:text-6xl font-display font-bold text-black px-8">REDEFINE REALITY</span>
+            <span class="text-4xl md:text-6xl font-display font-bold text-black/30 px-8 text-outline-black">///</span>
+            <span class="text-4xl md:text-6xl font-display font-bold text-black px-8">EMBRACE THE UNKNOWN</span>
+            <span class="text-4xl md:text-6xl font-display font-bold text-black/30 px-8 text-outline-black">///</span>
+        </div>
+    </div>
+
+    <!-- About / Concept Section -->
+    <section class="py-24 bg-arcane-dark relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-arcane-accent/5 to-transparent"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1 relative">
+                    <div class="absolute -top-10 -left-10 w-24 h-24 border-t-2 border-l-2 border-arcane-accent"></div>
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2020&auto=format&fit=crop"
+                        alt="Arcane Concept" class="w-full grayscale hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute -bottom-10 -right-10 w-24 h-24 border-b-2 border-r-2 border-arcane-accent">
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">THE ARCANE PHILOSOPHY</h2>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        We don't just sell clothes; we craft identities. Born from the intersection of cyberpunk
+                        aesthetics and minimalist streetwear, Arcane represents the silent rebels.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                        Every piece is designed to be timeless yet futuristic, using premium materials that stand the
+                        test of time and trends.
+                    </p>
+                    <a href="about.html"
+                        class="text-arcane-accent font-bold tracking-widest hover:text-white transition-colors flex items-center gap-2 group">
+                        READ OUR STORY
+                        <span class="transform group-hover:translate-x-2 transition-transform">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="font-display font-bold text-3xl tracking-widest text-white mb-6 block">
+                        ARCANE
+                    </a>
+                    <p class="text-gray-500 max-w-sm mb-6">
+                        Redefining streetwear for the digital age. Designed in the void. Shipped worldwide.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-white/60 hover:bg-white hover:text-black transition-all">FB</a>
+                        <a href="#"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-white/60 hover:bg-white hover:text-black transition-all">IG</a>
+                        <a href="#"
+                            class="w-10 h-10 border border-white/10 flex items-center justify-center text-white/60 hover:bg-white hover:text-black transition-all">TW</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white tracking-wider mb-6">SHOP</h4>
+                    <ul class="space-y-4 text-gray-500">
+                        <li><a href="shop.html" class="hover:text-arcane-accent transition-colors">All Products</a></li>
+                        <li><a href="#" class="hover:text-arcane-accent transition-colors">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-arcane-accent transition-colors">Accessories</a></li>
+                        <li><a href="#" class="hover:text-arcane-accent transition-colors">Sale</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white tracking-wider mb-6">SUPPORT</h4>
+                    <ul class="space-y-4 text-gray-500">
+                        <li><a href="#" class="hover:text-arcane-accent transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-arcane-accent transition-colors">Shipping & Returns</a></li>
+                        <li><a href="contact.html" class="hover:text-arcane-accent transition-colors">Contact Us</a>
+                        </li>
+                        <li><a href="#" class="hover:text-arcane-accent transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
+                <p>&copy; 2026 ARCANE CLOTHING. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Crafted by Antigravity</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

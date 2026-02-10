@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP | ARCANE</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Site Config & Styles -->
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="antialiased selection:bg-arcane-accent selection:text-white bg-arcane-black text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html"
+                    class="font-display font-bold text-2xl tracking-widest hover:text-arcane-accent transition-colors">ARCANE</a>
+                <div class="hidden md:flex items-center space-x-12">
+                    <a href="index.html"
+                        class="text-sm font-medium tracking-wide hover:text-arcane-accent transition-colors">HOME</a>
+                    <a href="shop.html" class="text-sm font-medium tracking-wide text-arcane-accent">SHOP</a>
+                    <a href="about.html"
+                        class="text-sm font-medium tracking-wide hover:text-arcane-accent transition-colors">ABOUT</a>
+                    <a href="contact.html"
+                        class="text-sm font-medium tracking-wide hover:text-arcane-accent transition-colors">CONTACT</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <button id="search-btn" class="hover:text-arcane-accent"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg></button>
+                    <a href="cart.html" class="relative group hover:text-arcane-accent"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg><span
+                            class="absolute -top-2 -right-2 bg-arcane-accent text-white text-[10px] font-bold h-4 w-4 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity">0</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <header class="pt-32 pb-12 px-6 text-center bg-gradient-to-b from-arcane-black/80 to-arcane-black">
+        <h1 class="font-display text-4xl md:text-6xl font-bold mb-4">COLLECTION</h1>
+        <p class="text-gray-400 max-w-xl mx-auto">Explore the limited edition drops. Designed for the bold.</p>
+    </header>
+
+    <!-- Filters & Sort -->
+    <div class="sticky top-20 z-40 bg-arcane-black/95 backdrop-blur border-b border-white/5 py-4">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-wrap justify-between items-center gap-4">
+            <div class="flex gap-6 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
+                <button class="text-sm font-bold text-white border-b-2 border-arcane-accent pb-1">ALL</button>
+                <button class="text-sm text-gray-400 hover:text-white transition-colors">OUTERWEAR</button>
+                <button class="text-sm text-gray-400 hover:text-white transition-colors">TOPS</button>
+                <button class="text-sm text-gray-400 hover:text-white transition-colors">BOTTOMS</button>
+                <button class="text-sm text-gray-400 hover:text-white transition-colors">ACCESSORIES</button>
+            </div>
+            <div class="flex items-center gap-2 text-sm text-gray-400">
+                <span>SORT BY:</span>
+                <select class="bg-transparent text-white border-none focus:ring-0 cursor-pointer outline-none">
+                    <option class="bg-arcane-black">FEATURED</option>
+                    <option class="bg-arcane-black">PRICE: LOW TO HIGH</option>
+                    <option class="bg-arcane-black">PRICE: HIGH TO LOW</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <section class="py-16 bg-arcane-black min-h-screen">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+                <!-- Product Card Template -->
+                <div class="group relative">
+                    <a href="product.html" class="block overflow-hidden bg-arcane-gray aspect-[3/4] relative mb-4">
+                        <img src="https://placehold.co/600x800/101010/555555?text=PHANTOM+HOODIE" alt="Phantom Hoodie"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                        <!-- Quick Add Overlay -->
+                        <div
+                            class="absolute bottom-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button
+                                class="w-full bg-white text-black py-3 font-bold text-sm tracking-widest hover:bg-arcane-accent hover:text-white transition-colors">QUICK
+                                ADD</button>
+                        </div>
+                    </a>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="font-display font-medium text-base mb-1 group-hover:text-arcane-accent transition-colors">
+                                <a href="product.html">PHANTOM HOODIE</a></h3>
+                            <p class="text-gray-500 text-xs uppercase tracking-wide">Outerwear</p>
+                        </div>
+                        <span class="font-bold text-sm">$89.00</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group relative">
+                    <a href="product.html" class="block overflow-hidden bg-arcane-gray aspect-[3/4] relative mb-4">
+                        <img src="https://placehold.co/600x800/101010/555555?text=VOID+CARGO" alt="Void Cargo"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button
+                                class="w-full bg-white text-black py-3 font-bold text-sm tracking-widest hover:bg-arcane-accent hover:text-white transition-colors">QUICK
+                                ADD</button>
+                        </div>
+                    </a>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="font-display font-medium text-base mb-1 group-hover:text-arcane-accent transition-colors">
+                                <a href="product.html">VOID CARGO PANTS</a></h3>
+                            <p class="text-gray-500 text-xs uppercase tracking-wide">Bottoms</p>
+                        </div>
+                        <span class="font-bold text-sm">$120.00</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group relative">
+                    <a href="product.html" class="block overflow-hidden bg-arcane-gray aspect-[3/4] relative mb-4">
+                        <img src="https://placehold.co/600x800/101010/555555?text=ECLIPSE+TEE" alt="Eclipse Tee"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button
+                                class="w-full bg-white text-black py-3 font-bold text-sm tracking-widest hover:bg-arcane-accent hover:text-white transition-colors">QUICK
+                                ADD</button>
+                        </div>
+                    </a>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="font-display font-medium text-base mb-1 group-hover:text-arcane-accent transition-colors">
+                                <a href="product.html">ECLIPSE GRAPHIC TEE</a></h3>
+                            <p class="text-gray-500 text-xs uppercase tracking-wide">Tops</p>
+                        </div>
+                        <span class="font-bold text-sm">$45.00</span>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="group relative">
+                    <a href="product.html" class="block overflow-hidden bg-arcane-gray aspect-[3/4] relative mb-4">
+                        <img src="https://placehold.co/600x800/101010/555555?text=NEON+BEANIE" alt="Neon Beanie"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button
+                                class="w-full bg-white text-black py-3 font-bold text-sm tracking-widest hover:bg-arcane-accent hover:text-white transition-colors">QUICK
+                                ADD</button>
+                        </div>
+                    </a>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="font-display font-medium text-base mb-1 group-hover:text-arcane-accent transition-colors">
+                                <a href="product.html">NEON BEANIE</a></h3>
+                            <p class="text-gray-500 text-xs uppercase tracking-wide">Accessories</p>
+                        </div>
+                        <span class="font-bold text-sm">$25.00</span>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="group relative">
+                    <a href="product.html" class="block overflow-hidden bg-arcane-gray aspect-[3/4] relative mb-4">
+                        <img src="https://placehold.co/600x800/101010/555555?text=STEALTH+BOMBER" alt="Stealth Bomber"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button
+                                class="w-full bg-white text-black py-3 font-bold text-sm tracking-widest hover:bg-arcane-accent hover:text-white transition-colors">QUICK
+                                ADD</button>
+                        </div>
+                    </a>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="font-display font-medium text-base mb-1 group-hover:text-arcane-accent transition-colors">
+                                <a href="product.html">STEALTH BOMBER</a></h3>
+                            <p class="text-gray-500 text-xs uppercase tracking-wide">Outerwear</p>
+                        </div>
+                        <span class="font-bold text-sm">$180.00</span>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="group relative">
+                    <a href="product.html" class="block overflow-hidden bg-arcane-gray aspect-[3/4] relative mb-4">
+                        <img src="https://placehold.co/600x800/101010/555555?text=CYBER+MASK" alt="Cyber Mask"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button
+                                class="w-full bg-white text-black py-3 font-bold text-sm tracking-widest hover:bg-arcane-accent hover:text-white transition-colors">QUICK
+                                ADD</button>
+                        </div>
+                    </a>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="font-display font-medium text-base mb-1 group-hover:text-arcane-accent transition-colors">
+                                <a href="product.html">CYBER MASK</a></h3>
+                            <p class="text-gray-500 text-xs uppercase tracking-wide">Accessories</p>
+                        </div>
+                        <span class="font-bold text-sm">$35.00</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-16 space-x-4">
+                <button
+                    class="px-4 py-2 border border-white/20 text-white hover:bg-white hover:text-black transition-colors">PREV</button>
+                <button class="px-4 py-2 bg-white text-black font-bold">1</button>
+                <button
+                    class="px-4 py-2 border border-white/20 text-white hover:bg-white hover:text-black transition-colors">2</button>
+                <button
+                    class="px-4 py-2 border border-white/20 text-white hover:bg-white hover:text-black transition-colors">NEXT</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-white/5 text-center text-gray-600 text-sm">
+        <p>&copy; 2026 ARCANE. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
